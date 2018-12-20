@@ -6,7 +6,7 @@ This tool uses a virtual environment to house the Flask dependencies. Activate t
 
 A requirements.txt has also been included if you don't want to use a virtual environment or want to make your own.
 
-Within the python-flask-starter directory, use the command: python app.py to activate the web server locally. Navigate your web browser to http://0.0.0.0:8080/ in order to view the example.
+Within the python-flask-starter directory, use the command: `python app.py` to activate the web server locally. Navigate your web browser to http://0.0.0.0:8080/ in order to view the example.
 
 To deactivate venv when finished, use the command: `deactivate`
 
