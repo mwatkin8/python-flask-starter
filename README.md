@@ -1,3 +1,7 @@
+# Python-flask-starter
+This repository is meant to be a template for those who want to use python and flask to create a FHIR application. 
+
+## Instructions
 Python 3.6 should be installed and the following steps should be followed to run the example:
 
 This tool uses a virtual environment to house the Flask dependencies. Activate the virtual environment using the command: `. venv/bin/activate`
