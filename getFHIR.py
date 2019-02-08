@@ -3,17 +3,18 @@ import fhirclient.models.patient as p
 import fhirclient.models.condition as c
 
 #A dictionary used to initialize the FHIRClient settings and specify the FHIR server you want to query.
-settings = {
-    'app_id': 'python_FHIR_app',
-    'api_base': 'http://fhirtest.uhn.ca/baseDstu3/'
-}
-server = client.FHIRClient(settings=settings).server
 
 def getPatient():
     '''
     This method shows how to use the fhirclient's Patient model to get FHIR data from a server.
     This example returns the ID, name, and birth year for all females over 45 years old.
     '''
+    settings = {
+        'app_id': 'python_FHIR_app',
+        'api_base': 'http://test.fhir.org/r3/'
+    }
+    server = client.FHIRClient(settings=settings).server
+
     #Query to FHIR server for all female patients
     search = p.Patient.where(struct={'gender': 'female'})
     results = search.perform_resources(server)
@@ -39,6 +40,12 @@ def getCondition():
     This method shows how to use both the fhirclient Condition and Patient models to get FHIR data from a server.
     This example returns the ID and name of each patient with hypertension.
     '''
+    settings = {
+        'app_id': 'python_FHIR_app',
+        'api_base': 'http://fhirtest.uhn.ca/baseDstu3/'
+    }
+    server = client.FHIRClient(settings=settings).server
+
     #Query the FHIR server for all hypertension conditions using the SMOMED code for hypertension
     search = c.Condition.where(struct={'code': '38341003'})
     results = search.perform_resources(server)
