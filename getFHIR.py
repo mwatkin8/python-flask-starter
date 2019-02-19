@@ -11,7 +11,7 @@ def getPatient():
     '''
     settings = {
         'app_id': 'python_FHIR_app',
-        'api_base': 'http://test.fhir.org/r3/'
+        'api_base': 'http://sqlonfhir-stu3.azurewebsites.net/fhir/'
     }
     server = client.FHIRClient(settings=settings).server
 
