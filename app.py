@@ -12,7 +12,7 @@ http://0.0.0.0:8080/list to launch additional views for your app with each funct
 @app.route('/')
 def launch():
     '''
-    Launches our initial view by rendering index.html and calling each method from our imported getFHIR.py file.
+    Launches our initial view by rendering dashboard.html and calling each method from our imported getFHIR.py file.
     The return from each method will populate the dynamic variables designated by double curly braces in the HTML.
     '''
     return render_template('index.html',
