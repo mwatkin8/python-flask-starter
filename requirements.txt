@@ -131,7 +131,7 @@ pluggy==0.6.0
 ply==3.10
 post==1.0.2
 prompt-toolkit==1.0.15
-psutil==5.4.3
+psutil==5.6.6
 psycopg2==2.7.4
 ptyprocess==0.5.2
 public==1.0.3
