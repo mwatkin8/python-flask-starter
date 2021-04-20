@@ -135,7 +135,7 @@ psutil==5.4.3
 psycopg2==2.7.4
 ptyprocess==0.5.2
 public==1.0.3
-py==1.5.2
+py==1.10.0
 pycodestyle==2.3.1
 pycosat==0.6.3
 pycountry==18.2.23
