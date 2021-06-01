@@ -198,7 +198,7 @@ traitlets==4.3.2
 typing==3.6.2
 unicodecsv==0.14.1
 Unidecode==1.0.22
-urllib3==1.22
+urllib3==1.26.5
 virtualenv==15.2.0
 vmc==0.1.1
 wcwidth==0.1.7
